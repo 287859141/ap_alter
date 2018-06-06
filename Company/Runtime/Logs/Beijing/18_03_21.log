@@ -1,0 +1,669 @@
+[ 2018-03-21T13:39:13+08:00 ] ::1 /ap_alter/beijing/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001461s ]
+
+[ 2018-03-21T13:39:22+08:00 ] ::1 /ap_alter/beijing/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+
+[ 2018-03-21T13:39:23+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001251s ]
+
+[ 2018-03-21T13:39:53+08:00 ] ::1 /ap_alter/beijing/member/m_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+
+[ 2018-03-21T13:40:06+08:00 ] ::1 /ap_alter/beijing/index/unlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+
+[ 2018-03-21T13:40:07+08:00 ] ::1 /ap_alter/beijing/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+
+[ 2018-03-21T13:40:21+08:00 ] ::1 /ap_alter/beijing/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-03-21T13:40:21+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+
+[ 2018-03-21T13:40:28+08:00 ] ::1 /ap_alter/beijing/user/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+
+[ 2018-03-21T13:40:33+08:00 ] ::1 /ap_alter/beijing/index/unlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001106s ]
+
+[ 2018-03-21T13:40:34+08:00 ] ::1 /ap_alter/beijing/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+
+[ 2018-03-21T13:40:46+08:00 ] ::1 /ap_alter/beijing/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+
+[ 2018-03-21T13:40:46+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+
+[ 2018-03-21T13:40:48+08:00 ] ::1 /ap_alter/beijing/member/m_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+
+[ 2018-03-21T13:40:49+08:00 ] ::1 /ap_alter/beijing/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+
+[ 2018-03-21T13:40:52+08:00 ] ::1 /ap_alter/beijing/member/setreview/id/594/urole/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+
+[ 2018-03-21T13:41:37+08:00 ] ::1 /ap_alter/beijing/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+
+[ 2018-03-21T13:41:47+08:00 ] ::1 /ap_alter/beijing/member/setreview/id/589/urole/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+
+[ 2018-03-21T13:42:14+08:00 ] ::1 /ap_alter/beijing/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+
+[ 2018-03-21T13:42:18+08:00 ] ::1 /ap_alter/beijing/member/m_edit/id/589
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+
+[ 2018-03-21T13:42:27+08:00 ] ::1 /ap_alter/beijing/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+
+[ 2018-03-21T13:43:36+08:00 ] ::1 /ap_alter/beijing/member/m_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000987s ]
+
+[ 2018-03-21T13:44:30+08:00 ] ::1 /ap_alter/beijing/member/region?id=27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `v_region` [ RunTime:0.0038s ]
+SQL: SELECT region_id as id,region_name as name FROM `v_region` WHERE ( parent_id=27 )  [ RunTime:0.0135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001310s ]
+
+[ 2018-03-21T13:44:36+08:00 ] ::1 /ap_alter/beijing/member/check_name?username=tianjin01
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `v_users` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_users` WHERE `username` = 'tianjin01' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2018-03-21T13:44:36+08:00 ] ::1 /ap_alter/beijing/member/m_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+
+[ 2018-03-21T13:44:38+08:00 ] ::1 /ap_alter/beijing/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001256s ]
+
+[ 2018-03-21T13:44:42+08:00 ] ::1 /ap_alter/beijing/member/m_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+
+[ 2018-03-21T13:45:15+08:00 ] ::1 /ap_alter/beijing/member/region?id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+SQL: SHOW COLUMNS FROM `v_region` [ RunTime:0.0037s ]
+SQL: SELECT region_id as id,region_name as name FROM `v_region` WHERE ( parent_id=10 )  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2018-03-21T13:45:28+08:00 ] ::1 /ap_alter/beijing/member/region?id=27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001473s ]
+SQL: SHOW COLUMNS FROM `v_region` [ RunTime:0.0035s ]
+SQL: SELECT region_id as id,region_name as name FROM `v_region` WHERE ( parent_id=27 )  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2018-03-21T13:45:30+08:00 ] ::1 /ap_alter/beijing/member/check_name?username=tianjin02
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: SHOW COLUMNS FROM `v_users` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_users` WHERE `username` = 'tianjin02' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001132s ]
+
+[ 2018-03-21T13:45:30+08:00 ] ::1 /ap_alter/beijing/member/m_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+
+[ 2018-03-21T13:45:32+08:00 ] ::1 /ap_alter/beijing/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001064s ]
+
+[ 2018-03-21T13:45:33+08:00 ] ::1 /ap_alter/beijing/member/m_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001545s ]
+
+[ 2018-03-21T13:45:54+08:00 ] ::1 /ap_alter/beijing/member/region?id=27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `v_region` [ RunTime:0.0034s ]
+SQL: SELECT region_id as id,region_name as name FROM `v_region` WHERE ( parent_id=27 )  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001146s ]
+
+[ 2018-03-21T13:45:55+08:00 ] ::1 /ap_alter/beijing/member/check_name?username=tianjin03
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+SQL: SHOW COLUMNS FROM `v_users` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_users` WHERE `username` = 'tianjin03' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2018-03-21T13:45:55+08:00 ] ::1 /ap_alter/beijing/member/m_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+
+[ 2018-03-21T13:45:57+08:00 ] ::1 /ap_alter/beijing/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001358s ]
+
+[ 2018-03-21T13:46:04+08:00 ] ::1 /ap_alter/beijing/member/setreview/id/594/urole/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001312s ]
+
+[ 2018-03-21T13:46:28+08:00 ] ::1 /ap_alter/beijing/member/setreview
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+
+[ 2018-03-21T13:46:30+08:00 ] ::1 /ap_alter/beijing/member/setreview
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+
+[ 2018-03-21T13:46:33+08:00 ] ::1 /ap_alter/beijing/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+
+[ 2018-03-21T13:46:36+08:00 ] ::1 /ap_alter/beijing/member/setreview/id/594/urole/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+
+[ 2018-03-21T13:46:40+08:00 ] ::1 /ap_alter/beijing/index/unlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+
+[ 2018-03-21T13:46:41+08:00 ] ::1 /ap_alter/beijing/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+
+[ 2018-03-21T13:46:49+08:00 ] ::1 /ap_alter/beijing/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001558s ]
+
+[ 2018-03-21T13:46:49+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+
+[ 2018-03-21T13:46:52+08:00 ] ::1 /ap_alter/beijing/order/o_ordernew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+
+[ 2018-03-21T13:46:59+08:00 ] ::1 /ap_alter/beijing/order/o_ordernew_check?idlist=2212%2C2213%2C2669%2C2214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+SQL: SHOW COLUMNS FROM `v_products` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `v_orderitems` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_orderitems` WHERE `pid` IN ('2212','2213','2669','2214') AND `uid` = 596 LIMIT 1   [ RunTime:0.0499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001223s ]
+
+[ 2018-03-21T13:47:02+08:00 ] ::1 /ap_alter/beijing/order/o_ordernew_confirm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+
+[ 2018-03-21T13:47:02+08:00 ] ::1 /ap_alter/beijing/order/o_showorderitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001017s ]
+
+[ 2018-03-21T13:47:07+08:00 ] ::1 /ap_alter/beijing/order/neworder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+
+[ 2018-03-21T13:47:09+08:00 ] ::1 /ap_alter/beijing/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+
+[ 2018-03-21T13:47:10+08:00 ] ::1 /ap_alter/beijing/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+
+[ 2018-03-21T13:47:13+08:00 ] ::1 /ap_alter/beijing/index/unlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+
+[ 2018-03-21T13:47:14+08:00 ] ::1 /ap_alter/beijing/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+
+[ 2018-03-21T13:47:22+08:00 ] ::1 /ap_alter/beijing/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001118s ]
+
+[ 2018-03-21T13:47:23+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+
+[ 2018-03-21T13:47:24+08:00 ] ::1 /ap_alter/beijing/order/o_ordernew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001647s ]
+
+[ 2018-03-21T13:47:33+08:00 ] ::1 /ap_alter/beijing/order/o_ordernew_check?idlist=2212%2C2213%2C2669%2C2214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+SQL: SHOW COLUMNS FROM `v_products` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `v_orderitems` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_orderitems` WHERE `pid` IN ('2212','2213','2669','2214') AND `uid` = 597 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
+
+[ 2018-03-21T13:47:36+08:00 ] ::1 /ap_alter/beijing/order/o_ordernew_confirm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+
+[ 2018-03-21T13:47:36+08:00 ] ::1 /ap_alter/beijing/order/o_showorderitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001274s ]
+
+[ 2018-03-21T13:47:41+08:00 ] ::1 /ap_alter/beijing/order/neworder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001021s ]
+
+[ 2018-03-21T13:47:43+08:00 ] ::1 /ap_alter/beijing/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+
+[ 2018-03-21T13:47:47+08:00 ] ::1 /ap_alter/beijing/index/unlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+
+[ 2018-03-21T13:47:48+08:00 ] ::1 /ap_alter/beijing/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001142s ]
+
+[ 2018-03-21T13:47:55+08:00 ] ::1 /ap_alter/beijing/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+
+[ 2018-03-21T13:47:56+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+
+[ 2018-03-21T13:47:58+08:00 ] ::1 /ap_alter/beijing/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+
+[ 2018-03-21T13:47:58+08:00 ] ::1 /ap_alter/beijing/order/o_ordernew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+
+[ 2018-03-21T13:48:08+08:00 ] ::1 /ap_alter/beijing/order/o_ordernew_check?idlist=2212%2C2213%2C2669%2C2214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `v_products` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `v_orderitems` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_orderitems` WHERE `pid` IN ('2212','2213','2669','2214') AND `uid` = 598 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2018-03-21T13:48:09+08:00 ] ::1 /ap_alter/beijing/order/o_ordernew_confirm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+
+[ 2018-03-21T13:48:09+08:00 ] ::1 /ap_alter/beijing/order/o_showorderitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+
+[ 2018-03-21T13:48:11+08:00 ] ::1 /ap_alter/beijing/order/neworder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+
+[ 2018-03-21T13:48:12+08:00 ] ::1 /ap_alter/beijing/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001071s ]
+
+[ 2018-03-21T13:48:14+08:00 ] ::1 /ap_alter/beijing/index/unlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+
+[ 2018-03-21T13:48:16+08:00 ] ::1 /ap_alter/beijing/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001142s ]
+
+[ 2018-03-21T13:48:23+08:00 ] ::1 /ap_alter/beijing/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001605s ]
+
+[ 2018-03-21T13:48:24+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+
+[ 2018-03-21T13:48:25+08:00 ] ::1 /ap_alter/beijing/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+
+[ 2018-03-21T13:48:33+08:00 ] ::1 /ap_alter/beijing/order/o_cheks?id=21217%2C21216%2C21215%2C&reviewstatus=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001560s ]
+SQL: SHOW COLUMNS FROM `v_orders` [ RunTime:0.0037s ]
+SQL: UPDATE `v_orders` SET `status`='2',`shenhechg`='1',`shenheuser`='594',`shenhetime`='1521611313' WHERE `id` IN ('21217','21216','21215') AND `status` = 1 [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2018-03-21T13:48:33+08:00 ] ::1 /ap_alter/beijing/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+
+[ 2018-03-21T13:48:34+08:00 ] ::1 /ap_alter/beijing/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+
+[ 2018-03-21T13:48:38+08:00 ] ::1 /ap_alter/beijing/dates/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001066s ]
+
+[ 2018-03-21T13:48:56+08:00 ] ::1 /ap_alter/beijing/dates/datasearch?company=21&clientuser=1&product=1&order=1&status=2&begintime=2018-2-21&overtime=2018-3-21&SelectedCuser=&SelectedProc=&Selectedstatus=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001190s ]
+
+[ 2018-03-21T13:49:04+08:00 ] ::1 /ap_alter/beijing/dates/datasearch/company/21/clientuser/1/product/1/order/1/status/2/begintime/2018-2-21/overtime/2018-3-21/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+
+[ 2018-03-21T13:49:31+08:00 ] ::1 /ap_alter/beijing/dates/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001850s ]
+
+[ 2018-03-21T13:49:37+08:00 ] ::1 /ap_alter/beijing/Dates/getclientuserlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+
+[ 2018-03-21T13:49:58+08:00 ] ::1 /ap_alter/beijing/dates/datasearch?company=21&clientuser=0&clientuserList=596&clientuserList=597&clientuserList=598&product=1&order=1&status=1&begintime=2018-2-21&overtime=2018-3-21&SelectedCuser=596%7C597%7C598&SelectedProc=&Selectedstatus=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002038s ]
+
+[ 2018-03-21T13:50:11+08:00 ] ::1 /ap_alter/beijing/dates/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+
+[ 2018-03-21T13:50:17+08:00 ] ::1 /ap_alter/beijing/Dates/getclientuserlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+
+[ 2018-03-21T13:50:47+08:00 ] ::1 /ap_alter/beijing/index/unlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+
+[ 2018-03-21T13:50:49+08:00 ] ::1 /ap_alter/beijing/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+
+[ 2018-03-21T13:51:01+08:00 ] ::1 /ap_alter/beijing/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001052s ]
+
+[ 2018-03-21T13:51:01+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+
+[ 2018-03-21T13:51:03+08:00 ] ::1 /ap_alter/beijing/dates/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+
+[ 2018-03-21T13:51:07+08:00 ] ::1 /ap_alter/beijing/Dates/getproductlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000192s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002117s ]
+
+[ 2018-03-21T13:51:18+08:00 ] ::1 /ap_alter/beijing/dates/datasearch?company=21&product=1&order=1&status=1&begintime=2018-2-21&overtime=&SelectedCuser=&SelectedProc=&Selectedstatus=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+
+[ 2018-03-21T13:51:23+08:00 ] ::1 /ap_alter/beijing/dates/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001653s ]
+
+[ 2018-03-21T13:51:32+08:00 ] ::1 /ap_alter/beijing/Dates/getorderstatuslist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+
+[ 2018-03-21T13:51:43+08:00 ] ::1 /ap_alter/beijing/dates/datasearch?company=21&product=1&order=0&OrderList=1&OrderList=2&OrderList=5&OrderList=6&OrderList=7&OrderList=21&OrderList=20&status=1&begintime=2018-3-5&overtime=2018-3-21&SelectedCuser=&SelectedProc=&Selectedstatus=1%7C2%7C5%7C6%7C7%7C21%7C20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001454s ]
+
+[ 2018-03-21T13:52:27+08:00 ] ::1 /ap_alter/beijing/index/unlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+
+[ 2018-03-21T13:52:28+08:00 ] ::1 /ap_alter/beijing/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+
+[ 2018-03-21T15:47:27+08:00 ] ::1 /ap_alter/beijing/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001492s ]
+
+[ 2018-03-21T15:47:28+08:00 ] ::1 /ap_alter/beijing/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+
+[ 2018-03-21T15:47:30+08:00 ] ::1 /ap_alter/beijing/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+
+[ 2018-03-21T15:47:31+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+
+[ 2018-03-21T15:47:34+08:00 ] ::1 /ap_alter/beijing/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+
+[ 2018-03-21T15:47:38+08:00 ] ::1 /ap_alter/beijing/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+
+[ 2018-03-21T15:52:34+08:00 ] ::1 /ap_alter/beijing/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002202s ]
+
+[ 2018-03-21T15:52:39+08:00 ] ::1 /ap_alter/beijing/order/o_overs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+
+[ 2018-03-21T15:53:03+08:00 ] ::1 /ap_alter/beijing/order/o_status?id=21205&type=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+SQL: SHOW COLUMNS FROM `v_orders` [ RunTime:0.0038s ]
+SQL: UPDATE `v_orders` SET `status`='21' WHERE `id` = 21205 [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001176s ]
+
+[ 2018-03-21T15:53:03+08:00 ] ::1 /ap_alter/beijing/order/o_overs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001404s ]
+
+[ 2018-03-21T15:53:03+08:00 ] ::1 /ap_alter/beijing/order/o_overs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+
+[ 2018-03-21T15:53:59+08:00 ] ::1 /ap_alter/beijing/order/o_overs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001383s ]
+

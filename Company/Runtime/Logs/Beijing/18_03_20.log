@@ -1,0 +1,20 @@
+[ 2018-03-20T18:18:44+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000248s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003319s ]
+
+[ 2018-03-20T18:19:05+08:00 ] ::1 /ap_alter/beijing/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+
+[ 2018-03-20T18:19:07+08:00 ] ::1 /ap_alter/beijing/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001442s ]
+
+[ 2018-03-20T18:19:09+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001403s ]
+

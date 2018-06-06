@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<!-- BEGIN HEAD -->
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>智能凭证通管理系统</title>
+
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+	<meta content="" name="description" />
+
+	<meta content="" name="author" />
+
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+
+	<link href="__PUBLIC__/css/log-css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="__PUBLIC__/css/log-css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="__PUBLIC__/css/log-css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="__PUBLIC__/css/log-css/style-metro.css" rel="stylesheet" type="text/css"/>
+
+	<link href="__PUBLIC__/css/log-css/style.css" rel="stylesheet" type="text/css"/>
+
+	<link href="__PUBLIC__/css/log-css/style-responsive.css" rel="stylesheet" type="text/css"/>
+
+	<link href="__PUBLIC__/css/log-css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+
+	<link href="__PUBLIC__/css/log-css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/css/log-css/user.css" rel="stylesheet" type="text/css"/>    
+
+	<!-- END GLOBAL MANDATORY STYLES -->
+
+	<!-- BEGIN PAGE LEVEL STYLES --> 
+
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/log-css/select2_metro.css" />
+
+	<!-- END PAGE LEVEL SCRIPTS -->
+
+	<link rel="shortcut icon" href="__PUBLIC__/image/favicon.ico" />
+
+</head>
+
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="page-header-fixed">
+
+	<!-- BEGIN HEADER -->
+    <include file="menu:head" />
+	<!-- END HEADER -->
+   <include file="menu:index" />
+
+		<!-- BEGIN PAGE -->  
+
+		<div class="page-content">
+
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+			<div id="portlet-config" class="modal hide">
+
+				<div class="modal-header">
+
+					<button data-dismiss="modal" class="close" type="button"></button>
+
+					<h3>portlet Settings</h3>
+
+				</div>
+
+				<div class="modal-body">
+
+					<p>Here will be a configuration form</p>
+
+				</div>
+
+			</div>
+
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+			<!-- BEGIN PAGE CONTAINER-->
+
+			<div class="container-fluid">
+
+				<!-- BEGIN PAGE HEADER-->   
+
+				<div class="row-fluid">
+
+					<div class="span12">
+
+						<!--include file="menu:set_up" -->
+
+						<h3 class="page-title">							
+
+							 <small></small>
+
+						</h3>
+
+						<ul class="breadcrumb">
+
+							<li>
+
+								<i class="icon-home"></i>
+
+								<a href="login">主页</a> 
+
+								<span class="icon-angle-right"></span>
+
+							</li>
+
+							<li>
+
+								<a href="#">产品管理</a>
+
+								<span class="icon-angle-right"></span>
+
+							</li>
+
+							<li><a href="#">附加选项</a></li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+				<!-- END PAGE HEADER-->
+
+				<!-- BEGIN PAGE CONTENT-->
+
+				<div class="row-fluid">               
+                
+
+					<div class="span12">
+
+						<div class="tabbable tabbable-custom boxless">
+
+						
+
+							<div class="tab-content">
+
+								<div class="tab-pane active" id="tab_1">
+
+									<div class="portlet box blue">
+
+										<div class="portlet-title">
+
+											<div class="caption"><i class="icon-reorder"></i>附加选项</div>
+
+											<div class="tools">
+
+												<!--<a href="javascript:;" class="collapse"></a>
+
+												<a href="#portlet-config" data-toggle="modal" class="config"></a>
+
+												<a href="javascript:;" class="reload"></a>
+
+												<a href="javascript:;" class="remove"></a>-->
+
+											</div>
+
+										</div>
+                                    
+
+										<div class="portlet-body form">
+                                        
+                                        
+                      <div>
+                     	
+                                            	<!--所属企业-->  
+                                            	<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+
+															         <label class="pro_companyname" >产品所属企业</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  >
+
+																{$product.companyname}
+
+															</div>
+
+														</div>
+
+													</div>				
+
+												</div>
+                                                    <!--产品编号-->	                                               										
+
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                        
+                                                                <div class="pro_box">
+                                                                        <label class="pro_companyname"  for="firstName">产品编号</label>
+                                                                </div>
+                                                                
+															<div class="pro_box_ad">
+
+                                                                  {$product.prefix}-{$product.number}
+															</div>
+                                                           
+
+														</div>
+
+													</div>
+
+													<!--/span-->												
+
+												</div>
+
+												<!--产品名称-->
+
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+
+															        <label class="pro_companyname" >产品名称</label>
+                                                            </div>
+                                                            
+                                                            <div class="pro_box_ad">
+
+                                                                    {$product.name}
+															</div>
+                                                            
+														</div>
+
+													</div>
+
+													
+
+												</div>
+
+												<!--产品图片-->        
+                                                
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+
+															        <label class="pro_companyname" >产品图片</label>
+                                                            </div>
+                                                            
+                                                            <div class="pro_box_ad">
+
+                                                                    <img src="{$product.patternurlurl}">
+															</div>
+                                                           
+
+														</div>
+
+													</div>
+
+												
+
+												</div>
+                                        
+                                                <!--产品所属分类-->        
+
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+
+															         <label class="pro_companyname" >产品所属分类</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="select_tab" >
+
+																  <if condition="($product.ptname neq '')">{$product.ptname}<else/>无分类</if>
+
+															</div>
+
+														</div>
+
+													</div>				
+
+												</div>
+                                                <!--成品尺寸-->        
+
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+                                                            
+
+															         <label class="pro_companyname" >成品尺寸</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                       
+                                                             {$product.width} <if condition="($width_inch eq 'true')">＂</if> * {$product.height}<if condition="($height_inch eq 'true')">＂</if> <if condition="($other_area eq 'true')"> ／{$product.other}</if><if condition="($special eq 'true')">(不等大)</if>                                                        
+                                                           
+															</div>
+                                                          
+
+														</div>
+
+													</div>				
+
+												</div>
+                                            <!--条形码-->        
+                                                
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+
+															        <label class="pro_companyname" >条形码</label>
+                                                            </div>
+                                                            
+                                                            <div class="pro_box_ad">                                                                  
+                                                                  <if condition="($product.barcode neq '')">{$product.barcode}<else/>该产品无条形码</if>
+															</div>
+                                                            
+														</div>
+
+													</div>
+
+												
+
+												</div>
+                                                 <!--产品种类-->        
+
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >产品种类</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                         {$product.class} 
+                                                               
+                                                            </div>
+                                                      
+                                                               
+                                                          
+
+														</div>
+
+													</div>				
+
+												</div>
+                                                 <!--装订方式-->        
+
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+                                                            
+
+															         <label class="pro_companyname" >装订方式</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                          <if condition="($product.binding neq '')">{$product.binding}<else/>该产品不需要装订</if>
+                                                   
+                                                            </div>
+														</div>
+
+													</div>				
+
+												</div>
+                                                 <!--封面工艺-->        
+
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >封面工艺</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                     <if condition="($product.wrapper neq '')">{$product.wrapper}<else/>该产品没有封面</if>
+                                                       
+                                                               
+                                                            </div>
+														</div>
+
+													</div>				
+
+												</div>
+                                                   <!--包装规格-->        
+
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >包装规格</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                          1{$product.packing_12}× {$product.packing_21}{$product.packing_22}   <if condition="($third_packing eq 'true')">*{$product.packing_31}{$product.packing_32}</if>                                                        
+															</div>                                                         
+
+														</div>
+
+													</div>				
+
+												</div>
+                                                <!--默认订货单位-->  
+                                            	<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+
+															         <label class="pro_companyname" >默认订货单位</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  >
+
+																{$packing_default}
+
+															</div>
+
+														</div>
+
+													</div>				
+
+												</div>
+                                                 <!--单价-->        
+                                                
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+
+															        <label class="pro_companyname" >单价</label>
+                                                            </div>
+                                                            
+                                                            <div class="pro_box_ad">
+ 																	<if condition="($product.price neq 0)">{$product.price}元<else/>该产品不做结算</if>
+															</div>
+                                                           
+														</div>
+
+													</div>
+
+												
+
+												</div>
+                                                  <!--库存数量-->        
+                                                
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+
+															        <label class="pro_companyname" >库存数量</label>
+                                                            </div>
+                                                            
+                                                            <div class="pro_box_ad">
+
+                                                                     <if condition="($product.amount neq 0)">{$product.amount}{$packing_default}<else/>该产品无库存</if>
+															</div>
+                                                            
+														</div>
+
+													</div>
+
+												
+
+												</div>
+                                                <!--预警库存数量-->        
+                                                
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+
+															        <label class="pro_companyname" >预警库存数量</label>
+                                                            </div>
+                                                            
+                                                            <div class="pro_box_ad">
+
+                                                                    <if condition="($product.alarmamount neq 0)">{$product.alarmamount}{$packing_default}<else/>该产品无预警库存数量</if>
+															</div>
+                                                            
+                                                           
+
+														</div>
+
+													</div>
+
+												
+
+												</div>
+                                                   <!--产品订购上限-->        
+                                                
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+
+															        <label class="pro_companyname" >产品订购上限</label>
+                                                            </div>
+															  <div class="pro_box_ad">
+
+                                                                   <if condition="($product.limitamount neq 0)">{$product.limitamount}{$packing_default}<else/>该产品无产品订购上限</if>
+															</div>
+                                                              
+
+														</div>
+
+										
+												</div>
+
+											</div>
+
+												<div class="portlet-title">
+                                                    产品附加选项
+												</div>
+
+											
+                      </div>               
+                      <div id="product">
+                                          
+                                        <table width="100%">
+                                                   <tr height="45" style=" font-family:'微软雅黑'; font-size:14px; font-weight:500; color:#557abb;">
+                                                           <td width="15%">名称</td>
+                                                           <td width="15%" style="text-align:center">用纸种类</td>
+                                                           <td width="10%" style="text-align:center">克重</td>
+                                                           <td width="10%" style="text-align:center">纸张颜色</td>
+                                                           <td width="10%" style="text-align:center">正面墨色</td>
+                                                           <td width="10%" style="text-align:center">背面墨色</td>
+                                                           <td width="10%" style="text-align:center">号码墨色</td>                                                           
+                                                           <td width="10%" style="text-align:center">操作</td>
+                                                   </tr>
+                                                   <volist name='lista' id='lista'>
+                                                   <tr id="user_table">
+                                                          <td height="45" onMouseOver="this.style.backgroudcolor='#247BFF';">
+                                                                {$lista.name}
+                                                                   
+                                                          </td>
+                                                          <td height="45" style="text-align:center">{$lista.paper}</td>
+                                                          <td height="45" style="text-align:center" >{$lista.weight}</td>
+                                                          <td height="45" style="text-align:center" >{$lista.color}</td>
+                                                          <td height="45" style="text-align:center" >{$lista.printing}</td>
+                                                          <td height="45"  style="text-align:center">{$lista.back}</td>
+                                                          <td height="45"  style="text-align:center">{$lista.number}</td>
+                                                        
+                                                          <td class="user_edit" style="text-align:center" height="45" onMouseOver="this.style.backgroudcolor='#247BFF';" >&nbsp;&nbsp;<a class="user_et" href="__APP__/Product/p_add_next/type/edit/id/{$product.id}/lid/{$lista.id}">编辑</a></td>
+                                                  
+                                                   </tr>
+                                                   </volist>
+                                                  
+                                        </table>
+                   
+										<div class="portlet-body form">
+                                         <div class="pagination">
+                                        　　{$page}
+                                        </div>	
+								</div>
+                         </div>
+											<!-- BEGIN FORM-->
+
+											<form action="__APP__/Product/items" class="horizontal-form" id="form_padd" method="post" >		
+                                        
+                                                 <!--其他选项--> 
+                                                 <!--名称-->    
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >名称</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                            <div class="cmm_num">
+                                                                     <input id="item_name" class="unit_class" name="item_name" value="{$onitem.name}">
+                                                            </div>
+                                                            <div class="cmm_unit">
+																<select class="span12 select2_category " onChange="itemname(this)"  name="role"  tabindex="1">
+                                                                   
+                                                                    <option value=""   >常用名称选择</option>	
+																	<option value="单张"   >单张</option>
+                                                                    <option value="封面"  >封面</option>
+                                                                    <option value="内页"  >内页</option>
+                                                                    <option value="上"  >上</option>			
+                                                                    <option value="中"  >中</option>	
+                                                                    <option value="下" >下</option>	
+                                                                    <option value="第一联"  >第一联</option>	
+                                                                    <option value="第二联"  >第二联</option>	
+                                                                    <option value="第三联"  >第三联</option>	
+                                                                    <option value="第四联"  >第四联</option>	
+                                                                    <option value="第五联"  >第五联</option>	
+                                                                    <option value="第六联"  >第六联</option>	
+                                                                    <option value="第七联"  >第七联</option>	
+																</select>
+                                                                
+                                                                </div>
+                                                               
+                                                            </div>
+                
+														</div>
+
+													</div>				
+
+												</div>
+                                                     <!--纸张种类-->    
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >纸张种类</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                            <div class="cmm_num">
+                                                                     <input id="paper" class="unit_class" name="paper" value="{$onitem.paper}">
+                                                            </div>
+                                                            <div class="cmm_unit">
+																<select class="span12 select2_category"  onChange="itempaper(this)"  name="role"  tabindex="1">
+                                                                   
+                                                                    <option value=""  >常用纸张选择</option>	
+																	<option value="无碳上纸" >无碳上纸</option>
+                                                                    <option value="无碳中纸" >无碳中纸</option>
+                                                                    <option value="无碳下纸" >无碳下纸</option>
+                                                                    <option value="胶版"  >胶版</option>			
+                                                                    <option value="票据"  >票据</option>	
+                                                                    <option value="打字"  >打字</option>
+                                                                    <option value="牛皮"  >牛皮</option>
+                                                                    <option value="铜版"  >铜版</option>
+                                                                    <option value="皮纹"  >皮纹</option>			
+                                                                    <option value="布纹"  >布纹</option>	
+                                                                    <option value="不干胶"  >不干胶</option>	
+																</select>
+                                                                
+                                                                </div>
+                                                               
+                                                            </div>
+                
+														</div>
+
+													</div>				
+
+												</div>
+                                                     <!--克重-->    
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >克重</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                            <div class="cmm_num">
+                                                                     <input id="weight" class="unit_class" name="weight" value="{$onitem.weight}">
+                                                            </div>
+                                                            <div class="cmm_unit">
+																<select class="span12 select2_category" onChange="itemweight(this)"  name="role"  tabindex="1">
+                                                                   
+                                                                    <option value="" >常用克重选择</option>	
+																	<option value="28"  >28</option>
+                                                                    <option value="40"  >40</option>
+                                                                    <option value="60" >60</option>
+                                                                    <option value="70"  >70</option>			
+                                                                    <option value="80"  >80</option>	
+                                                                    <option value="100"  >100</option>
+                                                                    <option value="120"  >120</option>
+                                                                    <option value="128" >128</option>	
+                                                                    <option value="140"  >140</option>
+                                                                    <option value="150"  >150</option>	
+                                                                    <option value="157" >157</option>
+                                                                    <option value="200"  >200</option>			
+                                                                    <option value="250"  >250</option>	
+																</select>
+                                                                
+                                                                </div>
+                                                               
+                                                            </div>
+                
+														</div>
+
+													</div>				
+
+												</div>
+                                                 <!--纸张颜色-->        
+
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >纸张颜色</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                            <div class="cmm_num">
+                                                            		<input  id="colors" class="unit_class" name="colors" value="{$onitem.color}">
+                                                            </div>
+                                                            <div class="cmm_unit">
+																<select class="span12 select2_category" onChange="itemcolors(this)" name="role"  tabindex="1">
+                                                                   
+                                                                    <option value=""  >常用纸色选择</option>	
+																	<option value="白"  >白</option>
+                                                                    <option value="黄"  >黄</option>	
+                                                                    <option value="粉"  >粉</option>
+                                                                    <option value="蓝" >蓝</option>
+                                                                    <option value="绿"  >绿</option>                                                    
+																</select>
+                                                                
+                                                                </div>
+                                                               
+                                                            </div>
+														</div>
+
+													</div>				
+
+												</div>    
+                                                     <!--正面墨色-->    
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >正面墨色</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                            <div class="cmm_num">
+                                                            		<input id="printing" class="unit_class" name="printing" value="{$onitem.printing}">
+                                                            </div>
+                                                            <div class="cmm_unit">
+																<select class="span12 select2_category"  name="role" onChange="itemprinting(this)"  tabindex="1">
+                                                                   
+                                                                    <option value=""   >常用正色选择</option>	
+                                                                    <option value="红"   >红</option>
+                                                                    <option value="金"  >金</option>
+                                                                    <option value="蓝"  >蓝</option>
+                                                                    <option value="绿"   >绿</option>	
+                                                                    <option value="紫"   >紫</option>
+                                                                    <option value="黑"   >黑</option>	
+																</select>
+                                                                
+                                                                </div>
+                                                               
+                                                            </div>
+                
+														</div>
+
+													</div>				
+
+												</div>
+                                                     <!--背面墨色-->    
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >背面墨色</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                            <div class="cmm_num">
+                                                            		<input id="backs" class="unit_class" name="backs" value="{$onitem.back}">
+                                                            </div>
+                                                            <div class="cmm_unit">
+																<select class="span12 select2_category"  name="role"  onChange="itembacks(this)" tabindex="1">
+                                                                   
+                                                                    <option value=""  >常用背色选择</option>	
+																	<option value="红"   >红</option>
+                                                                    <option value="金"   >金</option>
+                                                                    <option value="蓝"  >蓝</option>
+                                                                    <option value="绿"   >绿</option>	
+                                                                    <option value="紫"   >紫</option>
+                                                                    <option value="黑"  >黑</option>
+																</select>
+                                                                
+                                                                </div>
+                                                               
+                                                            </div>
+                
+														</div>
+
+													</div>				
+
+												</div>
+                                                 <!--号码墨色-->        
+
+												<div class="row-fluid">
+
+													<div class="pro_all ">
+
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+                                                            
+															         <label class="pro_companyname" >号码墨色</label>
+                                                            </div>
+
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                            <div class="cmm_num">
+                                                            		<input id="number" class="unit_class" name="number" value="{$onitem.number}">
+                                                            </div>
+                                                            <div class="cmm_unit">
+																<select class="span12 select2_category"  name="role" onChange="itemnumber(this)"  tabindex="1">
+                                                                   
+                                                                    <option value=""   >常用种类选择</option>	
+																	<option value="红"   >红</option>
+                                                                    <option value="金"  >金</option>
+                                                                    <option value="蓝"   >蓝</option>
+                                                                    <option value="绿"   >绿</option>	
+                                                                    <option value="紫"   >紫</option>
+                                                                    <option value="黑"   >黑</option>
+																</select>
+                                                                
+                                                                </div>
+                                                               
+                                                            </div>
+														</div>
+
+													</div>				
+
+												</div>
+                                                  
+     
+												<div class="form-actions">
+                                                    <input type="hidden" name="pid" value="{$product.id}">
+                                                    <input type="hidden" name="type" value="{$type}">
+                                                     <input type="hidden" name="lid" value="{$onitem.id}">
+                                                    <button type="button" class="btn blue" onClick=" return addate()"><i class="icon-plus"></i>&nbsp;&nbsp; 新&nbsp;&nbsp;增&nbsp;&nbsp;</button>
+
+													<button type="button" class="btn blue" onClick=" finish()"><i class="icon-ok"></i>&nbsp;&nbsp; 完&nbsp;&nbsp;成&nbsp;&nbsp;</button>
+
+													<button type="button" class="btn">&nbsp;&nbsp;取&nbsp;&nbsp;消&nbsp;&nbsp;</button>
+
+												</div>
+
+											</form>
+
+											<!-- END FORM--> 
+                                            <script type="text/jscript">
+											        
+												function finish()
+												{
+													window.location="__APP__/Product/index";
+													}
+												function addate(){
+													
+													 var name=document.getElementById('item_name');//产品名称
+														 if(name.value.trim()=="")
+														 {
+															 //alert("产品名称不能为空");
+															  name.focus();
+															 return false;
+														  }
+													 var paper=document.getElementById('paper');//产品名称
+														 if(paper.value.trim()=="")
+														 {
+															// alert("产品名称不能为空");
+															  paper.focus();
+															 return false;
+														  }
+												     var weight=document.getElementById('weight');//产品名称
+														 if(weight.value.trim()=="")
+														 {
+															// alert("产品名称不能为空");
+															  weight.focus();
+															 return false;
+														  }
+													var colors=document.getElementById('colors');//产品名称
+														 if(colors.value.trim()=="")
+														 {
+															 //alert("产品名称不能为空");
+															  colors.focus();
+															 return false;
+														  }
+													 var printing=document.getElementById('printing');//产品名称
+														 if(printing.value.trim()=="")
+														 {
+															 //alert("产品名称不能为空");
+															  printing.focus();
+															 return false;
+														  }
+													var backs=document.getElementById('backs');//产品名称
+														 if(backs.value.trim()=="")
+														 {
+															 //alert("产品名称不能为空");
+															  backs.focus();
+															 return false;
+														  }
+													 var number=document.getElementById('number');//产品编号
+														 if(number.value.trim()=="")
+														 {
+															// alert("号码墨色");
+															 number.focus();
+															 return false;
+														  }
+													
+														
+												    document.getElementById("form_padd").submit();
+												}	
+											
+												function itemname(obj)
+												{													
+													$("#item_name").val(obj.value);
+												}
+												function itempaper(obj)
+												{													
+													$("#paper").val(obj.value);
+												}
+												function itemweight(obj)
+												{													
+													$("#weight").val(obj.value);
+												}
+												function itemcolors(obj)
+												{													
+													$("#colors").val(obj.value);
+												}
+												function itemprinting(obj)
+												{													
+													$("#printing").val(obj.value);
+												}
+												function itembacks(obj)
+												{													
+													$("#backs").val(obj.value);
+												}
+												function itemnumber(obj)
+												{													
+													$("#number").val(obj.value);
+												}	
+																							
+										
+                                            </script>
+
+										</div>
+
+									</div>
+
+								
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<!-- END PAGE CONTENT-->         
+
+			</div>
+
+			<!-- END PAGE CONTAINER-->
+
+		</div>
+
+		<!-- END PAGE -->  
+
+	</div>
+
+	<!-- END CONTAINER -->
+
+		 <include file="menu:footer" />
+
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+	<!-- BEGIN CORE PLUGINS -->
+
+	<script src="__PUBLIC__/js/log-js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+	<script src="__PUBLIC__/js/log-js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+	<script src="__PUBLIC__/js/log-js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+
+	<script src="__PUBLIC__/js/log-js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--[if lt IE 9]>
+
+	<script src="__PUBLIC__/js/log-js/excanvas.min.js"></script>
+
+	<script src="__PUBLIC__/js/log-js/respond.min.js"></script>  
+
+	<![endif]-->   
+
+	<script src="__PUBLIC__/js/log-js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+	<script src="__PUBLIC__/js/log-js/jquery.blockui.min.js" type="text/javascript"></script>  
+
+	<script src="__PUBLIC__/js/log-js/jquery.cookie.min.js" type="text/javascript"></script>
+
+	<script src="__PUBLIC__/js/log-js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+	<!-- END CORE PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+
+	<script type="text/javascript" src="__PUBLIC__/js/log-js/select2.min.js"></script>
+
+	<!-- END PAGE LEVEL PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+	<script src="__PUBLIC__/js/log-js/app.js"></script>
+
+	<script src="__PUBLIC__/js/log-js/form-samples.js"></script>   
+
+	<!-- END PAGE LEVEL SCRIPTS -->
+
+	<script>
+
+		jQuery(document).ready(function() {    
+
+		   // initiate layout and plugins
+
+		   App.init();
+
+		   FormSamples.init();
+
+		});
+
+	</script>
+
+	<!-- END JAVASCRIPTS -->   
+
+<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-37564768-1']);  _gaq.push(['_setDomainName', 'keenthemes.com']);  _gaq.push(['_setAllowLinker', true]);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script></body>
+
+<!-- END BODY -->
+
+</html>

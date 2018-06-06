@@ -1,0 +1,55 @@
+#index 项目目录说明
+
+##目录说明
+
+-'Common' 公共库
+
+-'Conf'配置文件
+
+-'Controller' 方法控制器
+
+-'Model' 模型
+
+-'View' 视图
+
+#Controller 方法文件工作日志
+
+- IndexController.class.php log 2015-09-29(功能：数据查询，添加，修改，删除【默认控制器，CURD数据处理】)
+
+- UserController.class.php log 2015-09-29(功能：数据查询，添加，修改，删除【用户控制器，CURD数据处理】)
+
+- ProductController.class.php log 2015-09-29(功能：数据查询，添加，修改，删除【产品控制器，CURD数据处理】)
+
+- AdminController.class.php log 2015-09-29(功能：数据查询，添加，修改，删除【超级管理员控制器，CURD数据处理】)
+
+- CompanyController.class.php log 2015-09-29(功能：数据查询，添加，修改，删除【企业管理控制器，CURD数据处理】)
+
+- NoticePController.class.php log 2015-09-29(功能：数据查询，添加，修改，删除【公告控制器，CURD数据处理】)
+
+- MenuController.class.php log 2015-09-29(功能：数据查询，添加，修改，删除【导航控制器，CURD数据处理】)
+
+- MemberController.class.php log 2015-09-29(功能：数据查询，添加，修改，删除【用户控制器，CURD数据处理】)
+
+- DatesController.class.php log 2015-09-29(功能：数据查询，添加，修改，删除【数据导出控制器，CURD数据处理】)
+
+- CateWidgetController.class.php log 2015-09-29(功能：数据查询，添加，修改，删除【自定义控制器，CURD数据处理】)
+
+update-logs
+
+update-logs-2016-03-20(数据导出)
+
+update-logs-2016-04-12(新增用户权限)
+
+update-logs-2016-04-28(权限组确定分组)(支行、总行审核、财务复合)
+
+update-logs-2016-05-13(cache_logs)
+
+update-logs-2016-07-22(HTML_CACHE_ON/缓存处理)
+
+update-logs-2016-08-28(index/dg_main)
+
+update-logs-2016-09-19(Product/munber)
+
+update-logs-2016-10-08(user/edit_user|readdress)
+
+update-logs-2016-12-19(Public/404)

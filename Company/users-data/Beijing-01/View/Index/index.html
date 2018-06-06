@@ -1,0 +1,67 @@
+<include file="Public/Template/bank_lf/headers.html" />
+<script type="text/javascript">
+if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";")[1].replace(/[ ]/g,"")=="MSIE6.0" || navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";")[1].replace(/[ ]/g,"")=="MSIE7.0" || navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";")[1].replace(/[ ]/g,"")=="MSIE8.0" )
+{
+alert("您的浏览器版本过低，请更换浏览器或下载IE9以上版本");
+}
+</script>
+    <div id="page_box"></div>    
+    <div id="login">
+        <div class="loginf">
+            <div class="banner_login"><img src="__PUBLIC__/image/login_banners.png" /></div>
+            <div class="banner_sub">
+            
+                <div style="text-align:center;clear:both">
+					<script src="__PUBLIC__/js/log-js/gg_bd_ad_720x90.js" type="text/javascript"></script>
+                    <script src="__PUBLIC__/js/log-js/follow.js" type="text/javascript"></script>
+                    </div>
+                      <div id="form-main">
+                      <div id="form-div">
+                        <form class="form" id="form1" action="__APP__/beijing/index/login" method="post" >
+                    
+                          <p class="name">
+                         
+                          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="用户名" id="name" />
+                          </p>
+                    
+                          <p class="pass">
+                         
+                            <input name="password"  type="password" autocomplete="off" class="validate[required,custom[email]] feedback-input" id="pass" placeholder="密码" />
+                          </p>
+                    
+                          <!--<p class="text">
+                            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                          </p>-->
+                    
+                          <div class="submit">
+                            <input type="submit" value="登陆" onclick="return validate()" id="button-blue"/>
+                            <div class="ease"></div>
+                          </div>
+                        </form>
+                      </div>
+            </div>
+        </div> 
+    </div>
+<script type="text/javascript">
+	function validate(){
+		var uname=document.getElementById("name");
+		var pass=document.getElementById("pass");
+		if(isNull(uname.value)){
+		     alert("用户名不能为空");
+			 return false;
+		}
+		if(isNull(pass.value)){
+		    alert("密码不能为空");
+			return false;			
+		}		
+	  //document.getElementById('form1').submit();
+	  return true;
+	}
+        function isNull( str ){ 
+		if ( str == "" ) return true; 
+		var regu = "^[ ]+$"; 
+		var re = new RegExp(regu); 
+		return re.test(str); 
+		} 
+</script>
+<include file="__PUBLIC__/Template/bank_lf/footer.html" />

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>智能凭证通管理系统</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+<link href="__PUBLIC__/css/log-css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/style-metro.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/style.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/style-responsive.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link href="__PUBLIC__/css/log-css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/user.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/log-css/select2_metro.css" />
+<link rel="shortcut icon" href="__PUBLIC__/image/favicon.ico" />
+</head>
+<body class="page-header-fixed">
+{:W('menu/head')}
+<include file="$leftmenu" />
+<div class="page-content">
+		  <div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span12">						
+						<h3 class="page-title">
+							 <small></small>
+						</h3>
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home"></i>
+								<a href="__APP__/langfang/index/dg_main.html">主页</a> 
+								<span class="icon-angle-right"></span>
+							</li>
+							<li>
+								<a href="#">用户管理</a>
+								<span class="icon-angle-right"></span>
+							</li>
+							<li><a href="#">添加用户</a></li>
+						</ul>
+					</div>
+				</div>
+<div class="row-fluid"> 
+	<div class="span12">
+		<div class="tabbable tabbable-custom boxless">
+			<div class="tab-content">
+								<div class="tab-pane active" id="tab_1">
+									<div class="portlet box blue">
+										<div class="portlet-title">
+											<div class="caption"><i class="icon-reorder"></i>添加用户</div>
+											<div class="tools">												
+											</div>
+										</div>
+			<div class="portlet-body form">	
+				<form action="__APP__/user/user_edit" class="horizontal-form" id="form_edit" method="post" >
+                    <div class="row-fluid">
+                        <div class="us_at ">
+                            <div class="control-group">                            
+                                    <div class="us_box">
+                                         <label class="user_name"  for="firstName">用户名</label>
+                                    </div>                                    
+                                <div class="us_box_ad">
+                                         <input type="text" id="name" value="{$list.username}" name="name" class="m-wrap span12" placeholder="请输入账号">
+                                         <input type="hidden" name="key" value="{$list.id}">
+                                </div>
+                                <div class="txt_add"> <span class="help-block"><i class="icon-star" style="color:#F00;"></i>用户名以注册成功无法更改</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="us1 ">
+                            <div class="control-group">
+                                <div class="us_box">
+                                     <label class="user_name" >密码</label>
+                                </div>                                
+                                <div class="us_box_ad">
+                                         <input type="password" id="pass" name="pass" class="m-wrap span12" placeholder="初始密码">                                   
+
+                                </div>                                
+                                <div class="txt_add"> <span class="help-block"><i class="icon-star" style="color:#F00;"></i>为新用户创建一个6-10位初始登陆密码</span></div>
+                            </div>
+                        </div> 
+                    </div>     
+                    
+                    <div class="row-fluid">
+                        <div class="us1 ">
+                            <div class="control-group">
+                                <div class="us_box">
+                                     <label class="user_name" >密码确认</label>
+                                </div>                                
+                                <div class="us_box_ad">
+                                     <input type="password" id="repass" name="repass" class="m-wrap span12" placeholder="密码确认">          </div>                                
+                                  <div class="txt_add"> <span class="help-block"><i class="icon-star" style="color:#F00;"></i>确认6-10位初始登陆密码</span></div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="row-fluid">
+                        <div class="us1 ">
+                            <div class="control-group">
+                                <div class="us_box">
+                                     <label class="user_name" >真实姓名</label>
+                                </div>                                
+                                <div class="us_box_ad">
+                                     <input type="text" value="{$list.realname}" id="rname" name="rname" class="m-wrap span12" placeholder="密码确认">
+                                </div>                                
+                                  <div class="txt_add"> </div>
+                            </div>
+                        </div>
+                    </div>      
+
+                    <div class="row-fluid">
+                        <div class="us1 ">
+                            <div class="control-group">
+                                <div class="us_box">
+                                     <label class="user_name" >角色权限</label>
+                                </div>
+                                <div class="us_box_ad"  >
+                                    <select class="span12 select2_category" id="role" name="role" data-placeholder="请在这里选择一个角色权限" tabindex="1">
+                                        <option value=""   ></option>
+                                         <option value="15" <if condition="($list.group eq 15)"> selected="selected" </if>>营销管理员</option>
+                                         <option  value="14"  <if condition="($list.group eq 14)"> selected="selected" </if>  >仓储管理员</option>
+                                         <option value="92" <if condition="($list.group eq 92)"> selected="selected" </if>  >客户管理员</option>
+                                        <option value="91" <if condition="($list.group eq 91)"> selected="selected" </if>  >普通管理员</option>                                        
+                                       <option value="9" <if condition="($list.group eq 9)"> selected="selected" </if>  >超级管理员</option>                                       
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="row-fluid">
+                        <div class="us1 ">
+                            <div class="control-group">
+                                <div class="us_box">
+                                     <label class="user_name" >所属企业</label>
+                                </div>
+                                <div class="us_box_ad"  >
+                                    <select class="span12 select2_category"  id="cpny" name="cpny" data-placeholder="请在这里选择一个角色权限" tabindex="1">
+                                        <option value=""   ></option>
+                                        <volist name='lisc' id='company'>
+                                        <option value="{$company.id}"   >{$company.name}</option>
+                                        </volist>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn blue" onClick=" return valdata()"><i class="icon-ok"></i>&nbsp;&nbsp; 确&nbsp;&nbsp;定&nbsp;&nbsp;</button>
+                        <button type="button" class="btn">&nbsp;&nbsp;取&nbsp;&nbsp;消&nbsp;&nbsp;</button>
+                    </div>
+                </form>
+								
+<script type="text/jscript">
+		
+		function valdata(){
+				
+				var name = document.getElementById("name");
+				var pass = document.getElementById("cpny");															
+				var role = document.getElementsByName("role").item(0);
+				if((name.value).trim() == ""){														        
+					alert("用户名不能为空");
+					return false;
+				}
+
+				if((cpny.value).trim() == ""){
+					alert("请选择所属企业");
+					return false;
+				}
+			
+				if((role.value).trim() == ""){
+					alert("请选择用户权限");
+					return false;
+				}
+				document.getElementById("form_edit").submit();
+		}
+		 function isNull(arg1)
+			{
+			 return !arg1 && arg1!==0 && typeof arg1!=="boolean"?true:false;
+			}
+
+</script>
+
+                        </div>
+
+                    </div>
+
+                
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+			</div>
+		</div>
+	</div>
+<include file="menu:footer" />
+<script src="__PUBLIC__/js/log-js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+
+<script src="__PUBLIC__/js/log-js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--[if lt IE 9]>
+
+<script src="__PUBLIC__/js/log-js/excanvas.min.js"></script>
+
+<script src="__PUBLIC__/js/log-js/respond.min.js"></script>  
+
+<![endif]-->   
+
+<script src="__PUBLIC__/js/log-js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery.blockui.min.js" type="text/javascript"></script>  
+
+<script src="__PUBLIC__/js/log-js/jquery.cookie.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+<script type="text/javascript" src="__PUBLIC__/js/log-js/select2.min.js"></script>
+
+<script src="__PUBLIC__/js/log-js/app.js"></script>
+
+<script src="__PUBLIC__/js/log-js/form-samples.js"></script>  
+<script>
+
+	jQuery(document).ready(function() {    
+
+	   // initiate layout and plugins
+
+	   App.init();
+	   FormSamples.init();
+	});
+</script>
+<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-37564768-1']);  _gaq.push(['_setDomainName', 'keenthemes.com']);  _gaq.push(['_setAllowLinker', true]);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+</body>
+</html>

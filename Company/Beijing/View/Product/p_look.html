@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>智能凭证通管理系统</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+<link href="__PUBLIC__/css/log-css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/style-metro.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/style.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/style-responsive.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link href="__PUBLIC__/css/log-css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/user.css" rel="stylesheet" type="text/css"/> 
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/log-css/select2_metro.css" />
+<link rel="shortcut icon" href="__PUBLIC__/image/favicon.ico" />
+</head>
+<body class="page-header-fixed">
+{:W('menu/head')}	
+<include file="$leftmenu" />
+<div class="page-content">
+		  <div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span12">
+						<h3 class="page-title">	
+							 <small></small>
+						</h3>
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home"></i>
+								<a href="__APP__/beijing/index/dg_main">主页</a> 
+								<span class="icon-angle-right"></span>
+							</li>
+							<li>
+								<a href="#">产品管理</a>
+								<span class="icon-angle-right"></span>
+							</li>
+							<li><a href="#">附加选项</a></li>
+						</ul>
+					</div>
+				</div>
+<div class="row-fluid">
+					<div class="span12">
+						<div class="tabbable tabbable-custom boxless">
+							<div class="tab-content">
+								<div class="tab-pane active" id="tab_1">
+									<div class="portlet box blue">
+										<div class="portlet-title">
+											<div class="caption"><i class="icon-reorder"></i>附加选项</div>
+											<div class="tools">											
+											</div>
+										</div>
+<div class="portlet-body form"> 
+ <div>                    	
+<!--所属企业-->  
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                     <label class="pro_companyname" >产品所属企业</label>
+            </div>
+            <div class="pro_box_ad"  >
+                {$product.companyname}
+            </div>
+        </div>
+    </div>
+</div>
+<!--产品编号-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">        
+                <div class="pro_box">
+                        <label class="pro_companyname"  for="firstName">产品编号</label>
+                </div>                
+            <div class="pro_box_ad">
+                  {$product.prefix}-{$product.number}
+            </div> 
+        </div>
+    </div>	
+</div>
+<!--产品编号-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">        
+                <div class="pro_box">
+                        <label class="pro_companyname"  for="firstName">产品版号</label>
+                </div>                
+            <div class="pro_box_ad">
+                  {$product.versionnumber}
+            </div> 
+        </div>
+    </div>	
+</div>
+<!--产品名称-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                    <label class="pro_companyname" >产品名称</label>
+            </div>            
+            <div class="pro_box_ad">
+                    {$product.name}
+            </div>            
+        </div>
+    </div> 
+</div>
+<!--产品图片-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                    <label class="pro_companyname" >产品图片</label>
+            </div>            
+            <div class="pro_box_ad" >
+                    <a width="50" height="50" onClick="showchangetime()" title="点击查看大图" style="border:1px solid #F00;">点击查看图片</a>
+            </div>  
+        </div>
+    </div>
+</div>
+<!--产品所属分类--> 
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                     <label class="pro_companyname" >产品所属分类</label>
+            </div>
+            <div class="pro_box_ad"  id="select_tab" >
+                  <if condition="($product.ptname neq '')">{$product.ptname}<else/>无分类</if>
+            </div>
+        </div>
+    </div>
+</div>
+<!--成品尺寸-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                     <label class="pro_companyname" >成品尺寸</label>
+            </div>
+            <div class="pro_box_ad"  id="padd_tab" >       
+             {$product.width} <if condition="($width_inch eq 'true')">＂</if> * {$product.height}<if condition="($height_inch eq 'true')">＂</if> <if condition="($other_area eq 'true')"> -{$product.other}</if><if condition="($special eq 'true')">(不等大)</if>   
+            </div>
+        </div>
+    </div>
+</div>
+<!--条形码-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                    <label class="pro_companyname" >条形码</label>
+            </div>            
+            <div class="pro_box_ad">                                                                  
+                  <if condition="($product.barcode neq '')">{$product.barcode}<else/>该产品无条形码</if>
+            </div>            
+        </div>
+    </div>
+</div>
+ <!--产品种类-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                     <label class="pro_companyname" >产品种类</label>
+            </div>
+            <div class="pro_box_ad"  id="padd_tab" >
+         {$product.class}                
+            </div>   
+        </div>
+    </div>	
+</div>
+ <!--装订方式-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box"> 
+                     <label class="pro_companyname" >装订方式</label>
+            </div>
+            <div class="pro_box_ad"  id="padd_tab" >
+          <if condition="($product.binding neq '')">{$product.binding}<else/>该产品不需要装订</if>   
+            </div>
+        </div>
+    </div>
+</div>
+ <!--封面工艺--> 
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                     <label class="pro_companyname" >封面工艺</label>
+            </div>
+            <div class="pro_box_ad"  id="padd_tab" >
+     <if condition="($product.wrapper neq '')">{$product.wrapper}<else/>该产品没有封面</if>              
+            </div>
+        </div>
+    </div>
+</div>
+   <!--包装规格-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                     <label class="pro_companyname" >包装规格</label>
+            </div>
+            <div class="pro_box_ad"  id="padd_tab" >
+          1{$product.packing_12}× {$product.packing_21}{$product.packing_22}   <if condition="($third_packing eq 'true')">*{$product.packing_31}{$product.packing_32}</if>                                         
+            </div>
+        </div>
+    </div>
+</div>
+<!--默认订货单位-->  
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                     <label class="pro_companyname" >默认订货单位</label>
+            </div>
+            <div class="pro_box_ad"  >
+                {$packing_default}
+            </div>
+        </div>
+    </div>
+</div>
+ <!--单价-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                    <label class="pro_companyname" >单价</label>
+            </div>            
+            <div class="pro_box_ad">
+                    <if condition="($product.price neq 0)">{$product.price}元<else/>该产品不做结算</if>
+            </div>           
+        </div>
+    </div>
+</div>
+  <!--库存数量-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                    <label class="pro_companyname" >库存数量</label>
+            </div>            
+            <div class="pro_box_ad">
+                     <if condition="($product.amount neq 0)">{$product.amount}{$packing_default}<else/>该产品无库存</if>
+            </div>            
+        </div>
+    </div>
+</div>
+<!--预警库存数量-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                    <label class="pro_companyname" >预警库存数量</label>
+            </div>            
+            <div class="pro_box_ad">
+                    <if condition="($product.alarmamount neq 0)">{$product.alarmamount}{$packing_default}<else/>该产品无预警库存数量</if>
+            </div>  
+        </div>
+    </div>
+</div>
+<!--产品订购上限-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                    <label class="pro_companyname" >产品订购上限</label>
+            </div>
+              <div class="pro_box_ad">
+                   <if condition="($product.limitamount neq 0)">{$product.limitamount}{$packing_default}<else/>该产品无产品订购上限</if>
+            </div>  
+        </div>
+</div>
+</div>
+<!--产品排序-->
+<div class="row-fluid">
+    <div class="pro_all ">
+        <div class="pro_ad">
+            <div class="pro_box">
+                    <label class="pro_companyname" >产品排序</label>
+            </div>
+              <div class="pro_box_ad">
+                  {$product.sort}
+            </div>  
+        </div>
+</div>
+</div>
+<div class="portlet-title">
+    产品附加选项
+</div>
+
+</div>               
+<div id="product">                                          
+<table width="100%">
+           <tr height="45" style=" font-family:'微软雅黑'; font-size:14px; font-weight:500; color:#557abb;">
+                   <td width="15%">名称</td>
+                   <td width="15%" style="text-align:center">用纸种类</td>
+                   <td width="10%" style="text-align:center">克重</td>
+                   <td width="10%" style="text-align:center">纸张颜色</td>
+                   <td width="10%" style="text-align:center">正面墨色</td>
+                   <td width="10%" style="text-align:center">背面墨色</td>
+                   <td width="10%" style="text-align:center">号码墨色</td>                                                           
+                   <td width="10%" style="text-align:center">操作</td>
+           </tr>
+           <volist name='lista' id='lista'>
+           <tr id="user_table">
+                  <td height="45" >
+                        {$lista.name}
+                           
+                  </td>
+                  <td height="45" style="text-align:center">{$lista.paper}</td>
+                  <td height="45" style="text-align:center" >{$lista.weight}</td>
+                  <td height="45" style="text-align:center" >{$lista.color}</td>
+                  <td height="45" style="text-align:center" >{$lista.printing}</td>
+                  <td height="45"  style="text-align:center">{$lista.back}</td>
+                  <td height="45"  style="text-align:center">{$lista.number}</td>
+                
+                  <td class="user_edit" style="text-align:center" height="45" >&nbsp;&nbsp;
+                  </td>
+          
+           </tr>
+           </volist>
+          
+</table>
+                   
+                <div class="portlet-body form">
+                 <div class="pagination">
+                　　{$page}
+                </div>	
+        </div>
+ </div>
+
+<script type="text/jscript">		
+	function finish()
+	{
+		window.location="__APP__/beijing/Product/index";
+		}
+	function addate(){		
+		 var name=document.getElementById('item_name');//产品名称
+			 if(name.value.trim()=="")
+			 {
+				 //alert("产品名称不能为空");
+				  name.focus();
+				 return false;
+			  }
+		 var paper=document.getElementById('paper');//产品名称
+			 if(paper.value.trim()=="")
+			 {
+				// alert("产品名称不能为空");
+				  paper.focus();
+				 return false;
+			  }
+		 var weight=document.getElementById('weight');//产品名称
+			 if(weight.value.trim()=="")
+			 {
+				// alert("产品名称不能为空");
+				  weight.focus();
+				 return false;
+			  }
+		var colors=document.getElementById('colors');//产品名称
+			 if(colors.value.trim()=="")
+			 {
+				 //alert("产品名称不能为空");
+				  colors.focus();
+				 return false;
+			  }
+		 var printing=document.getElementById('printing');//产品名称
+			 if(printing.value.trim()=="")
+			 {
+				 //alert("产品名称不能为空");
+				  printing.focus();
+				 return false;
+			  }
+		var backs=document.getElementById('backs');//产品名称
+			 if(backs.value.trim()=="")
+			 {
+				 //alert("产品名称不能为空");
+				  backs.focus();
+				 return false;
+			  }
+		 var number=document.getElementById('number');//产品编号
+			 if(number.value.trim()=="")
+			 {
+				// alert("号码墨色");
+				 number.focus();
+				 return false;
+			  }
+		
+			
+		document.getElementById("form_padd").submit();
+	}	
+
+	function itemname(obj)
+	{													
+		$("#item_name").val(obj.value);
+	}
+	function itempaper(obj)
+	{													
+		$("#paper").val(obj.value);
+	}
+	function itemweight(obj)
+	{													
+		$("#weight").val(obj.value);
+	}
+	function itemcolors(obj)
+	{													
+		$("#colors").val(obj.value);
+	}
+	function itemprinting(obj)
+	{													
+		$("#printing").val(obj.value);
+	}
+	function itembacks(obj)
+	{													
+		$("#backs").val(obj.value);
+	}
+	function itemnumber(obj)
+	{													
+		$("#number").val(obj.value);
+	}	
+</script>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ <div class="TB_overlayBG" id="TB_overlay" style=" position: fixed; z-index: 100;top: 0;left: 0; height: 100%; width: 100%;background-color: #000;opacity: 0.75; display:none;"></div>
+                <div id="showdiv" style=" position:absolute; left:50%; top:50%;width:1024px; height:auto; background:#ffffff; display:none; z-index:1000"><div style="width:100%; background-color:#4b8df8;  font-size: 14px; color:white; height:30px; line-height:30px; font-family:微软雅黑;font-weight:500;">&nbsp;&nbsp;产品名称&nbsp;&nbsp;{$product.name}<span id="clienname">&nbsp;&nbsp;版号&nbsp;&nbsp;{$product.versionnumber}</span>的效果图<div style="float:right; padding-right:5px;"><a href="javascript:closechangetime()" style="color:white;">关闭</a></div></div>
+                 <div  style="width:95%; text-align:center; margin-top:10px;">
+                	<img src="__APP__/Uploads/{$product.patternurlurl}"width="1000" height="auto">
+                 </div>
+                 
+                </div>
+<include file="menu:footer" />
+<script src="__PUBLIC__/js/log-js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+
+<script src="__PUBLIC__/js/log-js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--[if lt IE 9]>
+
+<script src="__PUBLIC__/js/log-js/excanvas.min.js"></script>
+
+<script src="__PUBLIC__/js/log-js/respond.min.js"></script>  
+
+<![endif]-->   
+
+<script src="__PUBLIC__/js/log-js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery.blockui.min.js" type="text/javascript"></script>  
+
+<script src="__PUBLIC__/js/log-js/jquery.cookie.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+<script type="text/javascript" src="__PUBLIC__/js/log-js/select2.min.js"></script>
+
+<script src="__PUBLIC__/js/log-js/app.js"></script>
+
+<script src="__PUBLIC__/js/log-js/form-samples.js"></script>   
+
+
+<script>
+var showdiv=document.getElementById("showdiv");
+var TB_overlay=document.getElementById("TB_overlay");
+		function showchangetime()
+		{			
+			showdiv.style.display="block";
+			TB_overlay.style.display="block";
+			showdiv.style.marginLeft = "-512px" ;
+			showdiv.style.marginTop = -138+document.documentElement.scrollTop+"px";
+		}
+		
+		function closechangetime()
+		{
+			showdiv.style.display="none";			
+			TB_overlay.style.display="none";
+			showdiv.style.marginLeft = "0" ;
+			showdiv.style.marginTop = "0px";
+			}
+
+	jQuery(document).ready(function() {    
+
+	   // initiate layout and plugins
+	   App.init();
+	   FormSamples.init();
+	});
+</script>
+<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-37564768-1']);  _gaq.push(['_setDomainName', 'keenthemes.com']);  _gaq.push(['_setAllowLinker', true]);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+</body>
+</html>

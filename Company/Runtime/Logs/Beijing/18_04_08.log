@@ -1,0 +1,35 @@
+[ 2018-04-08T14:32:10+08:00 ] ::1 /ap_alter/beijing/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+
+[ 2018-04-08T14:32:16+08:00 ] ::1 /ap_alter/beijing/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000262s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002662s ]
+
+[ 2018-04-08T14:32:21+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001220s ]
+
+[ 2018-04-08T14:32:36+08:00 ] ::1 /ap_alter/beijing/Stock/warehouse_management
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002194s ]
+
+[ 2018-04-08T14:32:42+08:00 ] ::1 /ap_alter/beijing/Stock/storage_management
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000260s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002753s ]
+
+[ 2018-04-08T15:23:52+08:00 ] ::1 /ap_alter/beijing/Stock/warehouse_management
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001364s ]
+
+[ 2018-04-08T16:38:21+08:00 ] ::1 /ap_alter/beijing/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+

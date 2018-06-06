@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>智能凭证通管理系统</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+<script src="__PUBLIC__/js/jquery.js" type="text/javascript"></script>   
+<link href="__PUBLIC__/css/log-css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/style-metro.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/style.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/style-responsive.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link href="__PUBLIC__/css/log-css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/user.css" rel="stylesheet" type="text/css"/>   
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/log-css/select2_metro.css" />
+<link rel="shortcut icon" href="__PUBLIC__/image/favicon.ico" />
+</head>
+<body class="page-header-fixed">
+{:W('menu/head')}
+<include file="$leftmenu" />
+<div class="page-content">
+		  <div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span12">
+						<h3 class="page-title">	
+							 <small></small>
+						</h3>
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home"></i>
+								<a href="__APP__/langfang/index/dg_main.html">主页</a> 
+								<span class="icon-angle-right"></span>
+							</li>
+							<li>
+								<a href="#">产品管理</a>
+								<span class="icon-angle-right"></span>
+							</li>
+							<li><a href="#">添加产品</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row-fluid"> 
+					<div class="span12">
+						<div class="tabbable tabbable-custom boxless">
+							<div class="tab-content">
+								<div class="tab-pane active" id="tab_1">
+									<div class="portlet box blue">
+										<div class="portlet-title">
+											<div class="caption"><i class="icon-reorder"></i>添加产品</div>
+											<div class="tools">
+											</div>
+										</div>   
+										<div class="portlet-body form">
+											<form action="__APP__/langfang/Product/p_add" class="horizontal-form" id="form_add" method="post"  enctype="multipart/form-data">		
+                                            	<!--所属企业-->  
+                                            	<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >产品所属企业</label>
+                                                            </div>
+															<div class="pro_box_ad"  >
+																<select class="span12 select2_category" onChange="changeselect(this)"  id="customer" name="customer" data-placeholder="请在这里选择一个企业" tabindex="1">
+																	
+																	<volist name='lisc' id='company'>
+																	<option value="{$company.id}" selected   >{$company.name}</option>
+																	</volist>	
+																</select>
+															</div>
+														</div>
+													</div>	
+												</div>
+                                                    <!--产品编号-->
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">                                                        
+                                                                <div class="pro_box">
+                                                                        <label class="pro_companyname"  for="firstName">产品编号</label>
+                                                                </div>                                                                
+															<div class="pro_box_ad">
+                                                                     <input type="text" id="number" name="number" class="m-wrap span12" placeholder="产品编号">
+															</div>
+                                                           <span style="color:RED;"> 需要指定一个唯一的产品编号,格式为：PPP-CCC-000</span>
+														</div>
+													</div>	
+												</div>
+                                                <!--产品版号-->
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">                                                        
+                                                                <div class="pro_box">
+                                                                        <label class="pro_companyname"  for="firstName">产品版号</label>
+                                                                </div>                                                                
+															<div class="pro_box_ad">
+                                                                     <input type="text" id="versionnumber" name="versionnumber" class="m-wrap span12" placeholder="产品版号">
+															</div>
+                                                           <span style="color:RED;"> </span>
+														</div>
+													</div>
+												</div>
+												<!--产品名称-->
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															        <label class="pro_companyname" >产品名称</label>
+                                                            </div>                                                            
+                                                            <div class="pro_box_ad">
+                                                                     <input type="text" id="name" name="name" class="m-wrap span12" placeholder="产品名称">
+															</div>                                                            
+														</div>
+													</div>	
+												</div>
+												<!--产品图片--> 
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															        <label class="pro_companyname" >产品图片</label>
+                                                            </div>                                                            
+                                                            <div class="pro_box_ad">
+																<input type="file" id="upimg" name="upimg" class="m-wrap span12"/>
+                                                                   <!--  <input type="password" id="upimg" name="upimg" class="m-wrap span12" placeholder="产品图片">-->
+															</div>
+                                                             <span style="color:RED;">图片尺寸为宽度1000高度自动</span>
+														</div>
+													</div>
+												</div>                                       
+                                                <!--产品所属分类--> 
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >产品所属分类</label>
+                                                            </div>
+															<div class="pro_box_ad" >
+																<select class="span12 select2_category" id="select_tab" name="ptid" data-placeholder="请在这里选择一个角色权限" tabindex="1">
+																	<option value="0"  >无</option>
+                                                                    <volist name='pttype' id='pttype'>
+																	<option value="{$pttype.ptid}"   >{$pttype.ptname}</option>
+																	</volist>
+																</select>
+															</div>
+														</div>
+													</div>	
+												</div>
+                                                <!--成品尺寸--> 
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box"> 
+															         <label class="pro_companyname" >成品尺寸</label>
+                                                            </div>
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                            <div class="cmm_num"><input value="" id="unit_width" name="width"  class="unit_class">
+                                                            </div>
+                                                            <div class="cmm_lect">
+																<select class="span12 select2_category" name="width_measurement"  tabindex="1">	
+																	<option value="0" >毫米</option>
+                                                                    <option value="1" >英寸</option>
+																</select>                                                                
+                                                                </div>
+                                                                <div class="x_txt" >x</div>
+                                                               <div class="cmm_num"><input value="" id="unit_height"  name="height"  class="unit_class">
+                                                            </div>
+                                                            <div class="cmm_lect">
+																<select class="span12 select2_category" name="height_measurement" tabindex="1">	
+																	<option value="0" >毫米</option>
+                                                                    <option value="1" >英寸</option>
+																</select>
+                                                                </div>
+                                                                <div class="x_txt" >-</div>                                                                 
+                                                               <div class="cmm_num"><input value=""  class="unit_class"name="other"></div>
+                                                            <div class="padd_vl">
+                                                              <input type="checkbox" name="special" value="352">
+                                                              </div>  
+                                                            <div class="padd_tt" >多联尺寸不同勾选此框</div>
+															</div>   
+														</div>
+													</div>	
+												</div>
+                                            <!--条形码-->  
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															        <label class="pro_companyname" >条形码</label>
+                                                            </div>                                                            
+                                                            <div class="pro_box_ad">
+                                                                     <input type="text" id="department" name="barcode" class="m-wrap span12" placeholder="条形码">
+															</div>                                                            
+														</div>
+													</div>	
+												</div>
+                                                 <!--产品种类--> 
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >产品种类</label>
+                                                            </div>
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                            <div class="cmm_num"><input value="" id="unit_class" class="unit_class" name="class">
+                                                            </div>
+                                                            <div class="cmm_unit">
+																<select class="span12 select2_category" id="tabrole" onChange="unitclass(this)" name="role"  tabindex="1">                                                                    
+                                                                   <option value=""   >常用种类选择</option>	
+																	<option value="单张"  >单张</option>
+                                                                    <option value="本式"   >本式</option>
+                                                                    <option value="折式"  >折式</option>
+                                                                    <option value="存折"  >存折</option>			
+                                                                    <option value="书类"   >书类</option>	
+                                                                    <option value="宣传品" >宣传品</option>	
+                                                                    <option value="信笺"   >信笺</option>
+                                                                    <option value="其他"   >其他</option>	
+																</select>                                                                
+                                                                </div>                                                               
+                                                            </div>  
+														</div>
+													</div>	
+												</div>
+                                                 <!--装订方式--> 
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >装订方式</label>
+                                                            </div>
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                            <div class="cmm_num"><input value="" class="unit_class" id="unit_binding" name="binding" >
+                                                            </div>
+                                                            <div class="cmm_unit">
+																<select class="span12 select2_category" id="cmm_tab" onChange="unitbinding(this)" name="role"  tabindex="1">                                                                    <option value=""  id="cmm_tab" >常用种类选择</option>	
+                                                                  <option value="单张"  id="cmm_tab" >单张</option>
+																	
+                                                                    <option value="上封面"  id="cmm_tab" >上封面</option>
+                                                                    <option value="胶左"  id="cmm_tab" >胶左</option>
+                                                                    <option value="胶头"  id="cmm_tab" >胶头</option>
+                                                                    <option value="裹皮"  id="cmm_tab" >裹皮</option>			
+                                                                    <option value="对折"  id="cmm_tab" >对折</option>	
+                                                                    <option value="骑马钉"  id="cmm_tab" >骑马钉</option>
+                                                                    <option value="钉头"  id="cmm_tab" >钉头</option>
+                                                                    <option value="钉左"  id="cmm_tab" >钉左</option>                                                                   
+                                                                    <option value="锁线胶装"  id="cmm_tab" >锁线胶装</option>
+                                                                    <option value="双切打孔"  id="cmm_tab" >双切打孔</option>                                                                    
+                                                                    <option value="档案盒"  id="cmm_tab" >档案盒</option>
+																</select>                                                                
+                                                                </div>                                                               
+                                                            </div>
+														</div>
+													</div>	
+												</div>
+                                                 <!--封面工艺-->       
+
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >封面工艺</label>
+                                                            </div>
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                            <div class="cmm_num"><input value="" class="unit_class" id="unit_wrapper" name="wrapper" >
+                                                            </div>
+                                                            <div class="cmm_unit">
+																<select class="span12 select2_category" id="cmm_tab" onChange="unitwrapper(this)" name="role"  tabindex="1">                                                                     <option value=""  >常用种类选择</option>	
+																	<option value="裹皮" >裹皮</option>
+                                                                    <option value="裱褙"  >裱褙</option>
+                                                                    <option value="胶装" >胶装</option>
+                                                                    <option value="烫金"  >烫金</option>			
+                                                                    <option value="覆光膜" >覆光膜</option>	
+                                                                    <option value="覆亚膜" >覆亚膜</option>
+                                                                    <option value="骑马钉" >骑马钉</option>
+                                                                    <option value="穿绳" >穿绳</option>       
+                                                                    <option value="模切"  id="cmm_tab" >模切</option>                                                            
+																</select>                                                                
+                                                                </div>                                                               
+                                                            </div>
+														</div>
+													</div>
+												</div>
+                                                   <!--包装规格--> 
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >包装规格</label>
+                                                            </div>
+															<div class="pro_box_ad"  id="padd_tab" >
+                                                                <div class="cmm_num"><input value="1" class="unit_class" ></div>
+                                                                <div class="cmm_pack"><input  class="unit_class" id="packing_12" name="packing_12" value="" onBlur="textchange(this,0)"> </div>
+                                                                <div class="x_txt" >x</div>
+                                                                <div class="cmm_num"><input value="" class="unit_class" id="packing_21" name="packing_21" ></div>
+                                                                <div class="cmm_pack"><input class="unit_class" value=""  id="packing_22" name="packing_22" onBlur="textchange(this,1)"></div>
+                                                                <div class="x_txt" >x</div>                                                                 
+                                                                <div class="cmm_num"><input value="" class="unit_class"  id="packing_31" name="packing_31" ></div>
+                                                                <div class="cmm_pack"><input  class="unit_class" value=""  id="packing_32" name="packing_32" onBlur="textchange(this,2)">
+                                                                </div>                                                           
+															</div>
+														</div>
+													</div>	
+												</div>
+                                                <!--默认订货单位-->  
+                                            	<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															         <label class="pro_companyname" >默认订货单位</label>
+                                                            </div>
+															<div class="pro_box_ad"  >
+																<select class="span12 select2_category"  id="default1" onChange="changetext(this)" name="default"  tabindex="1">																
+																	<option value="1"   >最大单位：无</option>
+                                                                    <option value="2"   >中等单位：无</option>
+                                                                    <option value="3"   >最小单位：无</option>	
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+                                                 <!--单价-->                                                  
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															        <label class="pro_companyname" >单价</label>
+                                                            </div>                                                            
+                                                            <div class="pro_box_ad">
+                                                                     <input type="text" id="price" name="price" class="m-wrap span12" placeholder="单价">
+															</div>                                                           
+														</div>
+													</div>	
+												</div>
+                                                  <!--库存数量-->                                                 
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															        <label class="pro_companyname" >库存数量</label>
+                                                            </div>                                                            
+                                                            <div class="pro_box_ad">
+                                                                     <input type="text" id="amount" name="amount" class="m-wrap span12" placeholder="库存数量">
+															</div>                                                            
+														</div>
+													</div>
+												</div>
+                                                <!--预警库存数量-->                                                
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															        <label class="pro_companyname" >预警库存数量</label>
+                                                            </div>                                                            
+                                                            <div class="pro_box_ad">
+                                                                     <input type="text" id="alarmamount" name="alarmamount" class="m-wrap span12" placeholder="预警库存数量">
+															</div>
+														</div>
+													</div>
+												</div>
+                                                   <!--产品订购上限-->                                                 
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															     <label class="pro_companyname" >产品订购上限</label>
+                                                            </div>
+															<div class="pro_box_ad">
+                                                                 <input type="text" id="limitamount" name="limitamount" class="m-wrap span12" placeholder="订购上限">
+															</div> 
+														</div>										
+												</div>
+											</div>
+                                               <!--产品排序-->                                               
+												<div class="row-fluid">
+													<div class="pro_all ">
+														<div class="pro_ad">
+                                                            <div class="pro_box">
+															     <label class="pro_companyname" >产品排序</label>
+                                                            </div>
+															<div class="pro_box_ad">
+                                                                 <input type="text" id="sort" name="sort" class="m-wrap span12" placeholder="产品排序">
+															</div> 
+														</div>										
+												</div>
+											</div>
+												<div class="form-actions">
+													<button type="button" class="btn blue" onClick=" return valdata()"><i class="icon-ok"></i>&nbsp;&nbsp; 下&nbsp;&nbsp;一&nbsp;&nbsp;步&nbsp;&nbsp;</button>
+													<button type="button" class="btn">&nbsp;&nbsp;取&nbsp;&nbsp;消&nbsp;&nbsp;</button>
+												</div>
+											</form>											
+<script type="text/jscript">											        
+		function valdata(){													
+			
+			  var number=document.getElementById('number');//产品编号
+			 if(number.value.trim()=="")
+			 {
+				 alert("产品编号不能为空");
+				 number.focus();
+				 return false;
+			  }
+			 var data= number.value.split("-");
+			 if(data.lenght==3)
+			 {
+				for($i=0;$i<data.lenght;$i++)
+				{
+					if(data[$i].trim()=='')
+					{
+						alert("产品编号格式不正确");
+						return false;
+						}					
+					}				
+				}		   
+			var name=document.getElementById('name');//产品名称
+			 if(name.value.trim()=="")
+			 {
+				 alert("产品名称不能为空");
+				  name.focus();
+				 return false;
+			  }	
+				$.get('__APP__/langfang/Product/checkproductName',{'v':number.value},function(data){
+					if(data==1)
+					{
+						 alert("产品名称已存在");																																		
+						}else
+					{
+						document.getElementById("form_add").submit();
+						}		
+			});				
+		}
+		 function isNull(arg1)
+			{
+			 return !arg1 && arg1!==0 && typeof arg1!=="boolean"?true:false;
+			}	
+	function changetext(obj)
+	{
+		var selectitem=document.getElementById("default1");		
+		document.getElementById("s2id_default1").getElementsByTagName('a').item(0).innerHTML=$("#default1").find("option:selected").text();	
+	}			
+	function textchange(obj,index)
+	{
+		var selectitem=document.getElementById("default1");
+		var $txt="";
+		switch(index)
+		{
+			case 0:
+			$txt="最大单位：";
+			break;
+			case 1:
+			$txt="中等单位：";
+			break;
+			case 2:
+			$txt="最小单位：";
+			break;
+		}
+		selectitem.options[index]=new Option($txt+obj.value,index+1);
+		selectitem.options[0].setAttribute("selected","selected");
+		document.getElementById("s2id_default1").getElementsByTagName('a').item(0).innerHTML=selectitem.options[0].text;	
+		
+	}	
+	function unitclass(obj)
+	{													
+		$("#unit_class").val(obj.value);
+	}
+	function unitbinding(obj)
+	{													
+		$("#unit_binding").val(obj.value);
+	}
+	function unitwrapper(obj)
+	{													
+		$("#unit_wrapper").val(obj.value);
+	}
+	
+	
+function changeselect(obj){												
+
+		$.get('__APP__/langfang/Product/selectptype',{'id':obj.value},function(data){
+		var html="<option value=\"0\" >无</option>";
+				$("#select_tab").html(html+data);
+			});
+	}
+</script>
+                            </div>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		</div>
+	</div>
+<include file="menu:footer" />
+<script src="__PUBLIC__/js/log-js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>	
+
+<script src="__PUBLIC__/js/log-js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+
+<script src="__PUBLIC__/js/log-js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--[if lt IE 9]>
+
+<script src="__PUBLIC__/js/log-js/excanvas.min.js"></script>
+
+<script src="__PUBLIC__/js/log-js/respond.min.js"></script>  
+
+<![endif]-->   
+
+<script src="__PUBLIC__/js/log-js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery.blockui.min.js" type="text/javascript"></script>  
+
+<script src="__PUBLIC__/js/log-js/jquery.cookie.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+<script type="text/javascript" src="__PUBLIC__/js/log-js/select2.min.js"></script>
+
+<script src="__PUBLIC__/js/log-js/app.js"></script>
+
+<script src="__PUBLIC__/js/log-js/form-samples.js"></script>       
+
+<script>
+function orient() {
+	//alert('gete');
+	if (window.orientation == 0 || window.orientation == 180) {
+		$("body").attr("class", "portrait");
+		orientation = 'portrait';
+		return false;
+	}
+	else if (window.orientation == 90 || window.orientation == -90) {
+		$("body").attr("class", "landscape");
+		orientation = 'landscape';
+
+		return false;
+	}
+}
+
+
+$(function(){
+	orient();
+});
+
+
+$(window).bind( 'orientationchange', function(e){
+	orient();
+});
+
+	jQuery(document).ready(function() {    
+
+	   // initiate layout and plugins
+
+	   App.init();
+
+	   FormSamples.init();
+
+	});
+
+</script>   
+<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-37564768-1']);  _gaq.push(['_setDomainName', 'keenthemes.com']);  _gaq.push(['_setAllowLinker', true]);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+</body>
+</html>

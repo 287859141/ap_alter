@@ -1,0 +1,25 @@
+[ 2018-04-03T14:07:24+08:00 ] ::1 /ap_alter/beijing/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001632s ]
+
+[ 2018-04-03T14:07:34+08:00 ] ::1 /ap_alter/beijing/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+
+[ 2018-04-03T14:07:36+08:00 ] ::1 /ap_alter/beijing/index/dg_main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+
+[ 2018-04-03T14:24:58+08:00 ] ::1 /ap_alter/beijing/Stock/storage_management
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001662s ]
+
+[ 2018-04-03T15:31:53+08:00 ] ::1 /ap_alter/beijing/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000196s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002168s ]
+

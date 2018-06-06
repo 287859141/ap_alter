@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>智能凭证通管理系统</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+<link href="__PUBLIC__/css/log-css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/style-metro.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/style.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/style-responsive.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/log-css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link href="__PUBLIC__/css/log-css/uniform.default.css" rel="stylesheet" type="text/css"/>    
+<link href="__PUBLIC__/css/log-css/user.css" rel="stylesheet" type="text/css"/>    
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/log-css/select2_metro.css" />
+<link rel="shortcut icon" href="__PUBLIC__/image/favicon.ico" />
+</head>
+<body class="page-header-fixed">
+{:W('menu/head')}
+<include file="$leftmenu" />
+	<div class="page-content">
+		<div class="container-fluid">	
+            <div class="row-fluid">
+                <div class="span12">	
+                    <h3 class="page-title">	
+                         <small></small>
+                    </h3>
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="icon-home"></i>
+                            <a href="__APP__/beijing/index/dg_main">主页</a> 
+                            <span class="icon-angle-right"></span>
+                        </li>
+                        <li>
+                            <a href="#">产品管理</a>
+                            <span class="icon-angle-right"></span>
+                        </li>
+                        <li><a href="#">结束订单</a></li>
+                    </ul>
+                </div>
+            </div>
+				<div class="portlet box blue">	
+                   <div  class="portlet-title">   
+                    <div class="caption"><i class="icon-reorder"></i>结束订单</div>
+                        <div class="tools">
+                        </div>    
+                    </div>             
+               <div class="portlet-body form" >
+                    <div id="product">                                          
+                        <table width="100%">
+                             <tr height="45" style=" font-family:'微软雅黑'; font-size:14px; font-weight:500; color:#557abb;">
+                                   <td width="5%">订单号</td>
+                                   <td width="20%" style="text-align:center">订单提交者</td>
+                                   <td width="12%" style="text-align:center">订单提交时间</td>
+                                   <td width="15%" style="text-align:center">操作</td>
+                             </tr>
+                           <volist name='order' id='order' key="k">
+                           <tr id="user_table">
+                              <td height="45" > <input type="checkbox" name="checkbox_uid[]" value="{$order.id}">{$order.number}</td>
+                              <td height="45" >{$order.cpname}&nbsp;&nbsp;{$order.depart}&nbsp;&nbsp;{$order.realname}</td>
+                              <td height="45" style="text-align:center" >{$order['starttime']|date="Y-m-d H:i",###}</td>
+                              <td class="user_edit" style="text-align:center" >
+                              <a class="user_et" href="__APP__/beijing/order/o_see/id/{$order.id}">查看</a> &nbsp;&nbsp;
+                               <if condition="($reviewstatus eq 0)OR($reviewstatus eq 1)">
+                              <!--<a class="user_et" href="__APP__/beijing/order/o_list_edit/id/{$order.id}">编辑</a> -->&nbsp;&nbsp;  			</if>
+                              <if condition="($reviewstatus gt 0)">
+                             	 <a href="javascript:onelist({$order.id},{$reviewstatus},1)">结束订单</a> &nbsp;&nbsp;
+                              </if>                                                        
+                             <!-- <a href="javascript:dellist({$order.id})">删除</a>-->
+                              </td>                          
+                           </tr>
+                           </volist>                                  
+                        </table>
+                    <div class="portlet-body form"><input type="checkbox" name="allcheckbox" value="checkbox" onclick="javascript:select_all()" title="全选/取消">全选/取消 &nbsp;<!--<input type="button" onClick="dellist(3,0)" value="删除选择项"/>--> <if condition="($reviewstatus eq 0)"><input type="button" onClick="onelist('',{$reviewstatus},3)" value="结束订单"/>  </if>                
+                         <div class="pagination">
+                        　　{$page}
+                        </div>	
+                    </div>
+             </div>
+    </div>
+<script>
+var allcheckbox=document.getElementsByName('allcheckbox')[0];
+function select_all()
+{
+	var listid=document.getElementsByName('checkbox_uid[]');
+	if(allcheckbox.checked)
+		{	
+				for($i=0;$i<listid.length;$i++)
+				{
+					listid.item($i).checked="checked";					
+					listid.item($i).parentNode.className="checked";
+	
+				}
+		}else
+		{
+			for($i=0;$i<listid.length;$i++)
+				{
+					listid.item($i).checked=" ";
+					listid.item($i).parentNode.className=" ";
+				}
+		}
+}
+		function onelist($id,$reviewstatus,$type)
+		{			
+			if($type==3)
+				{
+					$id="";
+					var listid=document.getElementsByName('checkbox_uid[]');	
+					$reviewstatus=2;
+					for($i=0;$i<listid.length;$i++)
+					{
+						if(listid.item($i).checked)
+						{
+							
+							$id+=listid.item($i).value+",";
+							 window.location.reload();
+						}
+					}	
+				
+				}	
+			//alert($reviewstatus);
+			$.get('__APP__/beijing/order/o_ck_ending',{'id':$id,'reviewstatus':$reviewstatus}
+			,function(data){				
+							window.location.reload();
+		});
+		
+		}
+       function dellist(type,$id)
+	{	
+		
+		if(type==3)
+				{
+					$id="";
+					var listid=document.getElementsByName('checkbox_uid[]');			
+					for($i=0;$i<listid.length;$i++)
+					{
+						if(listid.item($i).checked)
+						{
+							$id+=listid.item($i).value+",";
+						}
+					}	
+				
+				}	
+	$.get('__APP__/beijing/order/o_del',{'id':$id},function(data){		
+							window.location.reload();
+	});
+		
+		}
+
+</script>		
+			</div>
+		</div>
+	</div>
+<include file="menu:footer" />
+<script src="__PUBLIC__/js/log-js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+
+<script src="__PUBLIC__/js/log-js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--[if lt IE 9]>
+
+<script src="__PUBLIC__/js/log-js/excanvas.min.js"></script>
+
+<script src="__PUBLIC__/js/log-js/respond.min.js"></script>  
+
+<![endif]-->   
+
+<script src="__PUBLIC__/js/log-js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery.blockui.min.js" type="text/javascript"></script>  
+
+<script src="__PUBLIC__/js/log-js/jquery.cookie.min.js" type="text/javascript"></script>
+
+<script src="__PUBLIC__/js/log-js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+<script type="text/javascript" src="__PUBLIC__/js/log-js/select2.min.js"></script>
+
+<script src="__PUBLIC__/js/log-js/app.js"></script>
+
+<script src="__PUBLIC__/js/log-js/form-samples.js"></script>   
+
+<script>
+
+    jQuery(document).ready(function() {    
+
+       // initiate layout and plugins
+
+       App.init();
+
+       FormSamples.init();
+
+    });
+
+</script>
+<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-37564768-1']);  _gaq.push(['_setDomainName', 'keenthemes.com']);  _gaq.push(['_setAllowLinker', true]);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+</body>
+</html>
